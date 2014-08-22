@@ -45,11 +45,12 @@ color header      green         black   "^Cc:"
 # * mail sent my me
 
 color index       cyan          black   "~(~P)"   # threads posted in
-color index       green         black   "~P"      # my      messages
-color index       brightyellow  black   "~N"      # new     messages
-color index       brightred     black   "~F"      # flagged messages
-color index       magenta       black   "~D"      # deleted messages
-color index       brightwhite   black   "~T"      # tagged  messages
+color index       green         black   "~P"      # my             messages
+color index       yellow        black   "~(~N)"   # threads w/ new messages
+color index       brightyellow  black   "~N"      # new            messages
+color index       brightred     black   "~F"      # flagged        messages
+color index       magenta       black   "~D"      # deleted        messages
+color index       brightwhite   black   "~T"      # tagged         messages
 
 
 # body highlight
