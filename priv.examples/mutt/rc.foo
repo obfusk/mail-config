@@ -1,0 +1,17 @@
+set folder                  = "~/Mail/foo"
+
+set postponed               = "~/Mail/local/Drafts"
+set record                  = "=Sent"
+set spoolfile               = "=Inbox
+
+set from                    = "me@foo"
+set envelope_from_address   = "me@foo"
+
+set signature               = "~/.mail-priv/signature"
+
+set smtp_url                = "smtp://me@foo@smtp.mykolab.com:587"
+set smtp_pass               = \
+  `gpg2 -q --for-your-eyes-only --no-tty -d ~/.secrets/foo.gpg`
+
+set ssl_starttls            = "yes"
+set ssl_force_tls           = "yes"
