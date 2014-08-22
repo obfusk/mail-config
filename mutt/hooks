@@ -12,4 +12,7 @@
 folder-hook .       "set sort = threads; exec collapse-all"
 folder-hook Sent    set sort = reverse-date
 
+message-hook '!(~g|~G) ~b"^-----BEGIN\ PGP\ (SIGNED\ )?MESSAGE"' \
+  "exec check-traditional-pgp"
+
 # vim: set tw=70 sw=2 sts=2 et fdm=marker :
