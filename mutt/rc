@@ -48,7 +48,7 @@ set attribution       = "* %f [%[%Y-%m-%d %H:%M]]:"
 set date_format       = "%Y-%m-%d %H:%M:%S"
 set folder_format     = " %t %N | %F %-8.8u %-8.8g %8s %d | %f"
 set forward_format    = "[Fwd: %s]"
-set index_format      = " %[!%b %d] | %Z | %-20.20L | %s"
+set index_format      = " %[!%b %d] | %?M?%03M&   ? %Z | %-20.20L | %s"
 set pgp_entry_format  = " %t%f%2c | %-4a | %4l/0x%k | %u"
 
 hdr_order   Subject: From: Date: To: Cc:
