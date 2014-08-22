@@ -38,20 +38,18 @@ set use_from
 set pgp_autoencrypt         = "yes"
 set pgp_autosign            = "yes"
 set pgp_replyencrypt        = "yes"
+set pgp_use_gpg_agent       = "yes"
 set pgp_verify_sig          = "yes"
 
 set pgp_good_sign           = "^\\[GNUPG:\\] GOODSIG"
 
 set alias_format      = " %2f %t | %-16a | %r"
 set attribution       = "* %f [%[%Y-%m-%d %H:%M]]:"
-set compose_format    = " -> Compose [size: +/- %l, #atts: %a]"
 set date_format       = "%Y-%m-%d %H:%M:%S"
 set folder_format     = " %t %N | %F %-8.8u %-8.8g %8s %d | %f"
 set forward_format    = "[Fwd: %s]"
 set index_format      = " %[!%b %d] | %Z | %-20.20L | %s"
 set pgp_entry_format  = " %t%f%2c | %-4a | %4l/0x%k | %u"
-
-set pager_format = " -> %Z %C/%m | %-20.20n | %-20.20s %>  -- (%P) "
 
 hdr_order   Subject: From: Date: To: Cc:
 ignore      *

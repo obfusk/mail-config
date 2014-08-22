@@ -9,6 +9,8 @@
 #
 # --                                                            # }}}1
 
-set status_format = " %r>  %f  [$my_account]  [%?M?%M/?%m]  [%n new]  [%d del]  [%t tag]  [%b inc]  %>  [%l]  -- (%P) "
+set compose_format  = " [$my_account] -> Compose [size: +/- %l, #atts: %a]"
+set pager_format    = " [$my_account] -> %Z %C/%m | %-20.20n | %-20.20s %>  -- (%P) "
+set status_format   = " [$my_account] %r>  %f  [%?M?%M/?%m]  [%n new]  [%d del]  [%t tag]  [%b inc]  %>  [%l]  -- (%P) "
 
 # vim: set tw=70 sw=2 sts=2 et fdm=marker :
