@@ -1,0 +1,80 @@
+# --                                                            # {{{1
+#
+# File        : mail/mutt/colours
+# Maintainer  : Felix C. Stegerman <flx@obfusk.net>
+# Date        : 2014-08-22
+#
+# Copyright   : Copyright (C) 2014  Felix C. Stegerman
+# Licence     : GPLv3+
+#
+# --                                                            # }}}1
+
+# index, ...
+
+color error       brightred     black
+color indicator   black         white
+color message     brightyellow  black
+color normal      white         black
+color status      brightwhite   blue
+color tree        red           black
+
+
+# pager
+
+color attachment  brightyellow  black
+color hdrdefault  cyan          black
+color markers     brightred     black
+color quoted      green         black
+color search      black         white
+color signature   blue          black
+color tilde       blue          black
+
+
+# headers
+
+color header      brightwhite   black   "^Subject:"
+color header      brightred     black   "^From:"
+color header      brightyellow  black   "^Date:"
+color header      brightgreen   black   "^To:"
+color header      green         black   "^Cc:"
+
+
+# index highlight
+
+# * new mail
+# * mail sent my me
+
+color index       cyan          black   "~(~P)"   # threads posted in
+color index       green         black   "~P"      # my      messages
+color index       brightyellow  black   "~N"      # new     messages
+color index       brightred     black   "~F"      # flagged messages
+color index       magenta       black   "~D"      # deleted messages
+color index       brightwhite   black   "~T"      # tagged  messages
+
+
+# body highlight
+
+# * email addresses
+# * http(s), ftp
+#
+# * bold          [nroff]
+# * underline     [nroff]
+#
+# * *bold*        [disabled]
+# * _underline_   [disabled]
+# * /italic/      [disabled]
+
+color body        brightred     black   \
+  "[\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+"
+
+color body        brightblue    black   \
+  "(https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+"
+
+color bold        brightwhite   black
+color underline   brightwhite   black
+
+# color body      brightwhite   black   "[*]+[^*]+[*]+"
+# color body      brightwhite   black   "_+[^_]+_+"
+# color body      brightwhite   black   "/+[^/]+/+"
+
+# vim: set tw=70 sw=2 sts=2 et fdm=marker :

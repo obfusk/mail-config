@@ -1,0 +1,15 @@
+# --                                                            # {{{1
+#
+# File        : mail/mutt/hooks
+# Maintainer  : Felix C. Stegerman <flx@obfusk.net>
+# Date        : 2014-08-22
+#
+# Copyright   : Copyright (C) 2014  Felix C. Stegerman
+# Licence     : GPLv3+
+#
+# --                                                            # }}}1
+
+folder-hook .       set sort = "threads"
+folder-hook Sent    set sort = "reverse-date"
+
+# vim: set tw=70 sw=2 sts=2 et fdm=marker :
