@@ -37,6 +37,7 @@ set use_from
 
 set pgp_autoencrypt         = "yes"
 set pgp_autosign            = "yes"
+set pgp_create_traditional  = "no"  # ?!
 set pgp_replyencrypt        = "yes"
 set pgp_use_gpg_agent       = "yes"
 set pgp_verify_sig          = "yes"
