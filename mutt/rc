@@ -31,7 +31,7 @@ set print                   = "ask-yes"
 set save_history            = 1000
 set send_charset            = "us-ascii:iso-8859-15:utf8"
 set sort                    = "threads"
-set sort_aux                = "reverse-date"
+set sort_aux                = "reverse-last-date"
 set use_envelope_from
 set use_from
 
