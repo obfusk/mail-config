@@ -1,0 +1,43 @@
+Expunge None
+Create Both
+
+
+MaildirStore local-foo
+Path ~/Mail/foo/
+Inbox ~/Mail/foo/Inbox
+Trash Trash
+
+MaildirStore local-bar
+Path ~/Mail/bar/
+Inbox ~/Mail/bar/Inbox
+Trash Trash
+
+
+IMAPStore foo
+Host imap.mykolab.com
+Port 143
+User me@foo
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/.secrets/foo.gpg"
+RequireSSL yes
+
+IMAPStore bar
+Host imap.mykolab.com
+Port 143
+User me@bar
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/.secrets/bar.gpg"
+RequireSSL yes
+
+
+Channel foo
+Master :foo:
+Slave :local-foo:
+Pattern *
+Sync All
+SyncState *
+
+Channel bar
+Master :bar:
+Slave :local-bar:
+Pattern *
+Sync All
+SyncState *
