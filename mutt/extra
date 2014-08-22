@@ -9,6 +9,6 @@
 #
 # --                                                            # }}}1
 
-set status_format = " %r>  %f  [%?M?%M/?%m]  [%n new]  [%d del]  [%t tag]  [%b inc]  %>  [%l]  -- (%P) "
+set status_format = " %r>  %f  [$my_account]  [%?M?%M/?%m]  [%n new]  [%d del]  [%t tag]  [%b inc]  %>  [%l]  -- (%P) "
 
 # vim: set tw=70 sw=2 sts=2 et fdm=marker :

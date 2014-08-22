@@ -69,7 +69,7 @@ source "~/.mail-priv/mutt/lists"
 source "~/.mail-priv/mutt/mailboxes"
 source "~/.mail-priv/mutt/new_aliases"
 
-source "~/.mail/mutt/extra"
+# source "~/.mail/mutt/extra"
 source "~/.mail/mutt/gpg"
 
 # vim: set tw=70 sw=2 sts=2 et fdm=marker :
