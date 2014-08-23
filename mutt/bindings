@@ -9,32 +9,23 @@
 #
 # --                                                            # }}}1
 
-bind  pager <up>    previous-line
-bind  pager <down>  next-line
+bind  pager       <up>    previous-line
+bind  pager       <down>  next-line
 
-bind  index [       previous-thread
-bind  index ]       next-thread
+bind  index       [       previous-thread
+bind  index       ]       next-thread
 
-bind  index "\ef"   change-folder
-bind  pager "\ef"   change-folder
+bind  index,pager "\ef"   change-folder
+bind  index,pager F       flag-message
 
 # --
 
-macro index S       "!mbsync -a^M"          "Sync mail"
+macro index       S     "!mbsync -a^M"          "sync mail"
+macro index,pager c     "<change-folder>?"      "open mailboxes ..."
+macro index,pager I     "<change-folder>?<tab>" "open mailboxes (new) ..."
+macro index,pager <     "<change-folder>\<^M"   "open =Sent"
+macro index,pager ~     "<change-folder>\!^M"   "open =Inbox"
 
-macro index c       "<change-folder>?"      "Open mailboxes [...]"
-macro pager c       "<change-folder>?"      "Open mailboxes [...]"
-
-macro index I       "<change-folder>?<tab>" "Open mailboxes [new] [...]"
-macro pager I       "<change-folder>?<tab>" "Open mailboxes [new] [...]"
-
-macro index <       "<change-folder>\<^M"   "Open =Sent"
-macro pager <       "<change-folder>\<^M"   "Open =Sent"
-
-# macro index >       "<change-folder>\>^M"   "Open =mbox"
-# macro pager >       "<change-folder>\>^M"   "Open =mbox"
-
-macro index ~       "<change-folder>\!^M"   "Open =Inbox"
-macro pager ~       "<change-folder>\!^M"   "Open =Inbox"
+# macro index,pager >   "<change-folder>\>^M"   "open =mbox"
 
 # vim: set tw=70 sw=2 sts=2 et fdm=marker :
