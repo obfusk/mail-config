@@ -46,8 +46,9 @@ color header      green         black   "^Cc:"
 
 color index       cyan          black   "~(~P)"   # threads posted in
 color index       green         black   "~P"      # my             messages
-color index       yellow        black   "~(~N)"   # threads w/ new messages
+color index       yellow        black   "~(~N)"   # threads w/ ... messages
 color index       brightyellow  black   "~N"      # new            messages
+color index       red           black   "~(~F)"   # threads w/ ... messages
 color index       brightred     black   "~F"      # flagged        messages
 color index       magenta       black   "~D"      # deleted        messages
 color index       brightwhite   black   "~T"      # tagged         messages
