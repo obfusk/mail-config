@@ -10,8 +10,11 @@ set envelope_from_address   = "me@foo"
 set signature               = "~/.mail-priv/signature"
 
 set smtp_url                = "smtp://me@foo@smtp.mykolab.com:587"
-set smtp_pass               = \
-  `gpg2 -q --for-your-eyes-only --no-tty -d ~/.secrets/foo.gpg`
+set smtp_pass               = "$my_smtp_pass_foo"
 
 set ssl_starttls            = "yes"
 set ssl_force_tls           = "yes"
+
+set my_account              = "foo"
+
+source "~/.mail/mutt/extra"
