@@ -44,7 +44,7 @@ set pgp_verify_sig          = "yes"
 
 set pgp_good_sign           = "^\\[GNUPG:\\] GOODSIG"
 
-set alias_format      = " %2f %t | %-16a | %r"
+set alias_format      = " %2f %t | %-24a | %r"
 set attribution       = "* %f [%[%Y-%m-%d %H:%M]]:"
 set date_format       = "%Y-%m-%d %H:%M:%S"
 set folder_format     = " %t %N | %F %-8.8u %-8.8g %8s %d | %f"
