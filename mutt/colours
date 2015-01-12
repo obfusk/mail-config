@@ -44,14 +44,14 @@ color header      green         black   "^Cc:"
 # * new mail
 # * mail sent my me
 
-color index       cyan          black   "~(~P)"     # threads posted in
+color index       blue          black   "~(~P)"     # threads posted in
 color index       green         black   "~P"        # my             messages
 color index       yellow        black   "~(~N)"     # in thread w/ new
 color index       brightyellow  black   "~N"        # new            messages
-color index       red           black   "~(~F)"     # in thread w/ flagged
+color index       magenta       black   "~(~F)"     # in thread w/ flagged
+color index       red           black   "~(~F) ~N"  # new in thread w/ flagged
 color index       brightred     black   "~F"        # flagged        messages
-color index       brightmagenta black   "~(~F) ~N"  # new in thread w/ flagged
-color index       magenta       black   "~D"        # deleted        messages
+color index       cyan          black   "~D"        # deleted        messages
 color index       brightwhite   black   "~T"        # tagged         messages
 
 
