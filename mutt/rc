@@ -2,7 +2,7 @@
 #
 # File        : mail/mutt/rc
 # Maintainer  : Felix C. Stegerman <flx@obfusk.net>
-# Date        : 2016-06-26
+# Date        : 2016-09-26
 #
 # Copyright   : Copyright (C) 2016  Felix C. Stegerman
 # Licence     : GPLv3+
@@ -34,9 +34,11 @@ set sort_aux                = "reverse-last-date"
 set use_envelope_from
 set use_from
 
+set crypt_use_gpgme         = "no"  # TODO
 set pgp_autoencrypt         = "yes"
 set pgp_autosign            = "yes"
 set pgp_create_traditional  = "no"  # ?!
+set pgp_encrypt_self        = "yes" # !!
 set pgp_replyencrypt        = "yes"
 set pgp_use_gpg_agent       = "yes"
 set pgp_verify_sig          = "yes"
