@@ -20,7 +20,7 @@ bind  index,pager F       flag-message
 
 # --
 
-macro index       S     "!mbsync -a^M"          "sync mail"
+macro index       S     "!mbsync -V -a^M"       "sync mail"
 macro index,pager c     "<change-folder>?"      "open mailboxes ..."
 macro index,pager I     "<change-folder>?<tab>" "open mailboxes (new) ..."
 macro index,pager <     "<change-folder>\<^M"   "open =Sent"
