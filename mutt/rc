@@ -2,9 +2,9 @@
 #
 # File        : mail/mutt/rc
 # Maintainer  : Felix C. Stegerman <flx@obfusk.net>
-# Date        : 2016-09-26
+# Date        : 2020-12-01
 #
-# Copyright   : Copyright (C) 2016  Felix C. Stegerman
+# Copyright   : Copyright (C) 2020  Felix C. Stegerman
 # Licence     : GPLv3+
 #
 # --                                                            # }}}1
@@ -31,6 +31,7 @@ set save_history            = 1000
 set send_charset            = "us-ascii:iso-8859-15:utf8"
 set sort                    = "threads"
 set sort_aux                = "reverse-last-date"
+set strict_threads
 set use_envelope_from
 set use_from
 
@@ -38,7 +39,7 @@ set crypt_use_gpgme         = "no"  # TODO
 set pgp_autoencrypt         = "yes"
 set pgp_autosign            = "yes"
 set pgp_create_traditional  = "no"  # ?!
-set pgp_encrypt_self        = "yes" # !!
+# set pgp_encrypt_self        = "yes" # !!
 set pgp_replyencrypt        = "yes"
 set pgp_use_gpg_agent       = "yes"
 set pgp_verify_sig          = "yes"
@@ -50,7 +51,7 @@ set attribution       = "* %f [%[%Y-%m-%d %H:%M]]:"
 set date_format       = "%Y-%m-%d %H:%M:%S"
 set folder_format     = " %t %N | %F %-8.8u %-8.8g %8s %d | %f"
 set forward_format    = "[Fwd: %s]"
-set index_format      = " %[!%b %d] | %?M?%03M&   ? %Z | %-20.20L | %s"
+set index_format      = " %[!%b %d] | %?M?%03M&   ? %Z | %-20.20L | %@info@%s"
 set pgp_entry_format  = " %t%f%2c | %-4a | %4l/0x%k | %u"
 
 hdr_order   Subject: From: Date: To: Cc:
